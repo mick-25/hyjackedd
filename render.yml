@@ -1,0 +1,11 @@
+services:
+  - name: hyjackedd
+    image: registry.gitlab.com/stremio-add-ons/annatar:latest
+    startCommand: "python run.py"
+
+    # Optional: Specify a health check path
+    healthCheckPath: "/"
+
+databases:
+  - name: redis_data
+    plan: redis
