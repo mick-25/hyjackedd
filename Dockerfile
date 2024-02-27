@@ -55,4 +55,4 @@ COPY run.py /app/run.py
 ARG BUILD_VERSION=UNKNOWN
 ENV BUILD_VERSION=${BUILD_VERSION}
 
-CMD ["run.py"]
+CMD ["python run.py"]
